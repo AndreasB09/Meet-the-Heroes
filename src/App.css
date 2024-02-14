@@ -1,0 +1,20 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: solid 2px black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.hero-img {
+    width: 200px;
+}

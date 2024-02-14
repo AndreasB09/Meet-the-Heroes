@@ -18,21 +18,24 @@ function CardComponent() {
     <div className="card-container">
       {cardObjects.map(hero => (
         <div key={hero.id} className="card">
-          <h3>{hero.title}</h3>
-          <p>{hero.desc}</p>
-          {hero.title === "Barbarian" && <img src={barbarianImage} alt={hero.title} className="hero-img" />}
-          {hero.title === "Bard" && <img src={bardImage} alt={hero.title} className="hero-img" />}
-          {hero.title === "Cleric" && <img src={clericImage} alt={hero.title} className="hero-img" />}
-          {hero.title === "Druid" && <img src={druidImage} alt={hero.title} className="hero-img" />}
-          {hero.title === "Fighter" && <img src={fighterImage} alt={hero.title} className="hero-img" />}
-          {hero.title === "Gunslinger" && <img src={gunslingerImage} alt={hero.title} className="hero-img" />}
-          {hero.title === "Monk" && <img src={monkImage} alt={hero.title} className="hero-img" />}
-          {hero.title === "Paladin" && <img src={paladinImage} alt={hero.title} className="hero-img" />}
-          {hero.title === "Ranger" && <img src={rangerImage} alt={hero.title} className="hero-img" />}
-          {hero.title === "Rogue" && <img src={rogueImage} alt={hero.title} className="hero-img" />}
-          {hero.title === "Sorcerer" && <img src={sorcererImage} alt={hero.title} className="hero-img" />}
-          {hero.title === "Wizard" && <img src={wizardImage} alt={hero.title} className="hero-img" />}
-          
+          <div className="card-text">
+            <h3>{hero.title}</h3>
+            <p>{hero.desc}</p>
+          </div>
+          <div className="card-img">
+            {hero.title === "Barbarian" && <img src={barbarianImage} alt={hero.title} className="hero-img" />}
+            {hero.title === "Bard" && <img src={bardImage} alt={hero.title} className="hero-img" />}
+            {hero.title === "Cleric" && <img src={clericImage} alt={hero.title} className="hero-img" />}
+            {hero.title === "Druid" && <img src={druidImage} alt={hero.title} className="hero-img" />}
+            {hero.title === "Fighter" && <img src={fighterImage} alt={hero.title} className="hero-img" />}
+            {hero.title === "Gunslinger" && <img src={gunslingerImage} alt={hero.title} className="hero-img" />}
+            {hero.title === "Monk" && <img src={monkImage} alt={hero.title} className="hero-img" />}
+            {hero.title === "Paladin" && <img src={paladinImage} alt={hero.title} className="hero-img" />}
+            {hero.title === "Ranger" && <img src={rangerImage} alt={hero.title} className="hero-img" />}
+            {hero.title === "Rogue" && <img src={rogueImage} alt={hero.title} className="hero-img" />}
+            {hero.title === "Sorcerer" && <img src={sorcererImage} alt={hero.title} className="hero-img" />}
+            {hero.title === "Wizard" && <img src={wizardImage} alt={hero.title} className="hero-img" />}
+          </div>
         </div>
       ))}
     </div>
